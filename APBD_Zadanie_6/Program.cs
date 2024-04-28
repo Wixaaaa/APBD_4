@@ -1,4 +1,4 @@
-using APBD_Zadanie_6.Services
+using APBD_Zadanie_6.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
