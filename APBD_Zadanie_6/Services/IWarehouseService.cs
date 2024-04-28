@@ -1,9 +1,9 @@
-﻿using APBD_Task_6.Models;
+﻿using APBD_Zadanie_6.Models;
 
-namespace Zadanie5.Services
+namespace APBD_Zadanie_6.Services
 {
     public interface IWarehouseService
     {
-        public void AddProduct(ProductWarehouse productWarehouse);
+        Task<int> AddProduct(ProductWarehouse productWarehouse);
     }
 }

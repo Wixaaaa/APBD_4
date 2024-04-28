@@ -1,8 +1,8 @@
-﻿using APBD_Task_6.Models;
+﻿using APBD_Zadanie_6.Models;
 using Microsoft.AspNetCore.Mvc;
-using Zadanie5.Services;
+using ZAPBD_Zadanie_6.Services;
 
-namespace Zadanie5.Controllers
+namespace APBD_Zadanie_6.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -16,10 +16,10 @@ namespace Zadanie5.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddProduct(ProductWarehouse product)
+        public async Task<IActionResult> AddProduct(ProductWarehouse product)
         {
-            _warehouseService.AddProduct(product);
-            return Ok();
+            var idProductWarehouse = await _warehouseService.AddProduct(product);
+            return Ok(idProductWarehouse);
         }
     }
 }

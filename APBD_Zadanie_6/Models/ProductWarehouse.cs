@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace APBD_Task_6.Models
+namespace APBD_Zaadanie_6.Models
 {
     public class ProductWarehouse
     {
